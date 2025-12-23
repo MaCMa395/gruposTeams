@@ -1,50 +1,31 @@
 Programa que agrega y crea grupos en teams con usuarios masivamente
 
-# importar modulos en power Shell
+# Iniciar el programa
 
-Abrir terminal power Shell y poner lo siguiente
+Abrir terminal power Shell en modo administrador y ejecutar AgregarAlumnosTeams.ps1
 
-Install-Module -Name MicrosoftTeams -Force -AllowClobber
+Ingresar correo y contraseña
 
-para validar si el alumno existe antes de agregar instalar modulo
-Install-Module MSOnline -Force
-
-#Conectarse a Microsoft teams
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams   //ingresar usuario y contraseña
-
-conectarse al modulo MSOnline 
-Connect-MsolService
-
-#cambioar políticas de script si se tiene error
-Get-ExecutionPolicy
-
-Set-ExecutionPolicy RemoteSigned
-
-# crear base de datos
-Crear archivo equipos.csv en la misma carpeta que este archivo mismo nivel
-
+# crear archivos .csv base de datos
+Crear y modificar los archivo 
+** alumnoPorEquipo.csv
+** equipo.csv
 
 Ejemplo:
 
-equipos.csv
+equipo.csv
 DisplayName,Description,OwnerEmail
-Matematicas 1°A,Clase de Matemáticas 1°A,profesor1@colegio.edu
-Historia 2°B,Clase de Historia 2°B,profesor2@colegio.edu
-Ingles 3°C,Clase de Inglés 3°C,profesor3@colegio.edu
+SistemasSoporte,Grupo de Prueba,santifev@unirem.edu.mx
+SistemasPruebas,Grupo de prueba,adrimam@unirem.edu.mx
 
 alumnosPorEquipo.csv
 TeamName,Email
-Matematicas 1°A,alumno1@colegio.edu
-Matematicas 1°A,alumno2@colegio.edu
-Historia 2°B,alumno3@colegio.edu
-Historia 2°B,alumno4@colegio.edu
-Ingles 3°C,alumno5@colegio.edu
+SistemasSoporte,adrimam@unirem.edu.mx
+SistemasSoporte,marijia@unirem.edu.mx
+SistemasPruebas,santifev@unirem.edu.mx
+SistemasPruebas,marijia@unirem.edu.mx
 
-#modificar archivo AgregarAlumnosTeams.pas1
-modificar el idGrupo  2025-1-bg101-materia
 
-=======
-# gruposTeams
-Programa que agrega usuarios a teams masivamente
+
+
 
