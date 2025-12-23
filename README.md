@@ -3,11 +3,17 @@ Programa que agrega y crea grupos en teams con usuarios masivamente
 # 1) Importar modulos power Shell
 Abrir terminal power Shell y poner lo siguiente
 
+```bash
+# Instalar modulo necesario
 Install-Module -Name MicrosoftTeams -Force -AllowClobber
+```
 
 # 1.1) Cambiar políticas de script si se tiene error Get-ExecutionPolicy
 
+```bash
+# Quitar bloqueo de ejecucion de script
 Set-ExecutionPolicy RemoteSigned
+```
 
 # 2) crear archivos .csv base de datos
 Crear y modificar los archivo:
