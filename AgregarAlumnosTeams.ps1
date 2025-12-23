@@ -9,7 +9,7 @@ Connect-MicrosoftTeams
 # ================================
 # CARGAR CSV EQUIPOS (FORZANDO ENCABEZADOS)
 # ================================
-$rawEquipo = Get-Content "C:\Users\CV 4\Documents\gruposteams\equipo.csv"
+$rawEquipo = Get-Content ".\equipo.csv"
 if ($rawEquipo.Count -lt 2) {
     Write-Warning "El CSV de equipos esta vacio o mal formado."
     exit
@@ -22,7 +22,7 @@ $equipos = $rawEquipo |
 # ================================
 # CARGAR CSV ALUMNOS
 # ================================
-$rawAlumnos = Get-Content "C:\Users\CV 4\Documents\gruposteams\alumnoPorEquipo.csv"
+$rawAlumnos = Get-Content ".\alumnoPorEquipo.csv"
 if ($rawAlumnos.Count -lt 2) {
     Write-Warning "El CSV de alumnos esta vacio o mal formado."
     exit

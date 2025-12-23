@@ -1,12 +1,15 @@
 Programa que agrega y crea grupos en teams con usuarios masivamente
 
-# Iniciar el programa
+# 1) Importar modulos power Shell
+Abrir terminal power Shell y poner lo siguiente
 
-Abrir terminal power Shell en modo administrador y ejecutar AgregarAlumnosTeams.ps1
+Install-Module -Name MicrosoftTeams -Force -AllowClobber
 
-Ingresar correo y contraseña
+# 1.1) Cambiar políticas de script si se tiene error Get-ExecutionPolicy
 
-# crear archivos .csv base de datos
+Set-ExecutionPolicy RemoteSigned
+
+# 2) crear archivos .csv base de datos
 Crear y modificar los archivo 
 ** alumnoPorEquipo.csv
 ** equipo.csv
@@ -25,7 +28,11 @@ SistemasSoporte,marijia@unirem.edu.mx
 SistemasPruebas,santifev@unirem.edu.mx
 SistemasPruebas,marijia@unirem.edu.mx
 
+# 3) Iniciar el programa
 
+Abrir terminal power Shell en modo administrador y ejecutar AgregarAlumnosTeams.ps1
+
+Ingresar correo y contraseña
 
 
 
