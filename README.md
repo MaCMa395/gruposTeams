@@ -44,3 +44,7 @@ Ingles 3°C,alumno5@colegio.edu
 #modificar archivo AgregarAlumnosTeams.pas1
 modificar el idGrupo  2025-1-bg101-materia
 
+=======
+# gruposTeams
+Programa que agrega usuarios a teams masivamente
+
