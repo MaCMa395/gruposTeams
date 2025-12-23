@@ -10,18 +10,22 @@ Install-Module -Name MicrosoftTeams -Force -AllowClobber
 Set-ExecutionPolicy RemoteSigned
 
 # 2) crear archivos .csv base de datos
-Crear y modificar los archivo 
+Crear y modificar los archivo:
+
 ** alumnoPorEquipo.csv
+
 ** equipo.csv
 
-Ejemplo:
+# 2.1) Ejemplo: equipo.csv
+Archivo que crea equipos y agrega al administrador
 
-equipo.csv
 DisplayName,Description,OwnerEmail
 SistemasSoporte,Grupo de Prueba,santifev@unirem.edu.mx
 SistemasPruebas,Grupo de prueba,adrimam@unirem.edu.mx
 
-alumnosPorEquipo.csv
+# 2.2) Ejemplo: alumnosPorEquipo.csv
+Archivo que asigna alumnos a los grupos
+
 TeamName,Email
 SistemasSoporte,adrimam@unirem.edu.mx
 SistemasSoporte,marijia@unirem.edu.mx
