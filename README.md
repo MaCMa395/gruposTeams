@@ -28,8 +28,8 @@ Archivo que crea equipos y agrega al administrador
 Archivo `equipo.csv`:
 ```csv
 DisplayName,Description,OwnerEmail
-SistemasSoporte,Grupo de Prueba,santifev@unirem.edu.mx
-SistemasPruebas,Grupo de prueba,adrimam@unirem.edu.mx
+NombreGrupo,Descripcion General,ejemplo@ejemplo.com
+NombreGrupo2,Descripcion General,ejemplo@ejemplo.com
 ```
 
 # 2.2) Ejemplo: alumnosPorEquipo.csv
@@ -38,10 +38,10 @@ Archivo que asigna alumnos a los grupos
 Archivo `alumnosPorEquipo.csv`:
 ```csv
 TeamName,Email
-SistemasSoporte,adrimam@unirem.edu.mx
-SistemasSoporte,marijia@unirem.edu.mx
-SistemasPruebas,santifev@unirem.edu.mx
-SistemasPruebas,marijia@unirem.edu.mx
+NombreGrupo1,ejemplo1@ejemplo.com
+NombreGrupo1,ejemplo2@ejemplo.com
+NonbreGrupo2,ejemplo1@ejemplo.com
+NombreGrupo2,ejemplo2@ejemplo.com
 ```
 
 # 3) Iniciar el programa
